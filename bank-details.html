@@ -6,19 +6,17 @@
 
   <title>Bank Account Details | بيانات الحساب البنكي</title>
 
-  <meta name="description" content="Professional bilingual Arabic-English bank account details page with secure copy buttons for IBAN and SWIFT information." />
+  <meta name="description" content="Professional bilingual Arabic-English bank account details page with secure copy buttons for IBAN, SWIFT, and Instapay information." />
   <meta name="theme-color" content="#06111f" />
 
-  <!-- Canonical URL -->
   <link rel="canonical" href="https://gis-orbit-x.github.io/bank-account-details/bank-details.html" />
 
-  <!-- Open Graph Preview: WhatsApp / Telegram / Facebook / LinkedIn -->
   <meta property="og:locale" content="ar_AR" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bank Account Details" />
   <meta property="og:url" content="https://gis-orbit-x.github.io/bank-account-details/bank-details.html" />
   <meta property="og:title" content="Bank Account Details | بيانات الحساب البنكي" />
-  <meta property="og:description" content="Professional bilingual Arabic-English bank account details page with secure copy buttons for IBAN and SWIFT information." />
+  <meta property="og:description" content="Professional bilingual Arabic-English bank account details page with secure copy buttons for IBAN, SWIFT, and Instapay information." />
   <meta property="og:image" content="https://gis-orbit-x.github.io/bank-account-details/bank-account-transfer.webp" />
   <meta property="og:image:secure_url" content="https://gis-orbit-x.github.io/bank-account-details/bank-account-transfer.webp" />
   <meta property="og:image:type" content="image/webp" />
@@ -26,17 +24,14 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Professional bilingual bank account details preview" />
 
-  <!-- Twitter / X Preview -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bank Account Details | بيانات الحساب البنكي" />
-  <meta name="twitter:description" content="Professional bilingual Arabic-English bank account details page with secure copy buttons for IBAN and SWIFT information." />
+  <meta name="twitter:description" content="Professional bilingual Arabic-English bank account details page with secure copy buttons for IBAN, SWIFT, and Instapay information." />
   <meta name="twitter:image" content="https://gis-orbit-x.github.io/bank-account-details/bank-account-transfer.webp" />
   <meta name="twitter:image:alt" content="Professional bilingual bank account details preview" />
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       width: 100%;
@@ -203,68 +198,23 @@
     }
 
     @media (max-width: 760px) {
-      body {
-        padding: 14px 10px;
-      }
-
-      .main-card {
-        padding: 22px 14px;
-        border-radius: 26px;
-      }
-
-      .preview {
-        border-radius: 20px;
-        margin-bottom: 24px;
-      }
-
-      .header h1 {
-        font-size: 28px;
-      }
-
-      .header p {
-        font-size: 17px;
-      }
-
-      .bank-card {
-        max-width: 100%;
-        padding: 18px;
-        border-radius: 22px;
-      }
-
-      .label {
-        font-size: 15px;
-      }
-
-      .value {
-        font-size: 17px;
-        padding: 14px;
-      }
-
-      .terms {
-        padding: 18px;
-      }
+      body { padding: 14px 10px; }
+      .main-card { padding: 22px 14px; border-radius: 26px; }
+      .preview { border-radius: 20px; margin-bottom: 24px; }
+      .header h1 { font-size: 28px; }
+      .header p { font-size: 17px; }
+      .bank-card { max-width: 100%; padding: 18px; border-radius: 22px; }
+      .label { font-size: 15px; }
+      .value { font-size: 17px; padding: 14px; }
+      .terms { padding: 18px; }
     }
 
     @media (max-width: 420px) {
-      body {
-        padding: 12px 8px;
-      }
-
-      .main-card {
-        padding: 20px 12px;
-      }
-
-      .header h1 {
-        font-size: 25px;
-      }
-
-      .bank-card {
-        padding: 16px;
-      }
-
-      .value {
-        font-size: 16px;
-      }
+      body { padding: 12px 8px; }
+      .main-card { padding: 20px 12px; }
+      .header h1 { font-size: 25px; }
+      .bank-card { padding: 16px; }
+      .value { font-size: 16px; }
     }
   </style>
 </head>
@@ -314,6 +264,12 @@
           <button class="copy-btn" onclick="copyText('swift', this)">نسخ / Copy</button>
         </div>
 
+        <div class="bank-card">
+          <div class="label">عنوان إنستاباي / Instapay Address</div>
+          <div class="value" id="instapay">sempu201028989683@instapay</div>
+          <button class="copy-btn" onclick="copyText('instapay', this)">نسخ / Copy</button>
+        </div>
+
       </section>
 
       <section class="terms">
@@ -322,16 +278,12 @@
         <ul>
           <li>يجب على المُحوِّل مراجعة جميع بيانات التحويل بدقة قبل تنفيذ العملية.</li>
           <li>The sender must carefully verify all transfer details before completing the transaction.</li>
-
           <li>صاحب الحساب غير مسؤول عن أي تحويل يتم إلى حساب خاطئ بسبب إدخال بيانات غير صحيحة من طرف المُحوِّل.</li>
           <li>The account holder is not responsible for transfers sent to incorrect accounts due to sender input errors.</li>
-
-          <li>يجب التأكد من اختيار العملة الصحيحة: الجنيه المصري أو اليورو قبل التحويل.</li>
-          <li>Please confirm the correct currency: Egyptian Pound or Euro before making the transfer.</li>
-
-          <li>أي رسوم بنكية أو رسوم تحويل دولي يتحملها المُحوِّل بالكامل ما لم يتم الاتفاق على غير ذلك مسبقًا.</li>
-          <li>Any bank charges or international transfer fees are fully borne by the sender unless agreed otherwise in advance.</li>
-
+          <li>يجب التأكد من اختيار العملة الصحيحة أو وسيلة التحويل الصحيحة قبل التحويل.</li>
+          <li>Please confirm the correct currency or transfer method before making the transfer.</li>
+          <li>أي رسوم بنكية أو رسوم تحويل يتحملها المُحوِّل بالكامل ما لم يتم الاتفاق على غير ذلك مسبقًا.</li>
+          <li>Any bank charges or transfer fees are fully borne by the sender unless agreed otherwise in advance.</li>
           <li>إرسال التحويل يعني موافقة المُحوِّل على صحة البيانات المستخدمة وتحمله مسؤولية أي خطأ في الإدخال.</li>
           <li>Submitting the transfer confirms that the sender accepts responsibility for the accuracy of the entered details.</li>
         </ul>
